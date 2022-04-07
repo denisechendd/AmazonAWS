@@ -34,5 +34,13 @@ COVID19資料整合專案搜集各個資料來源，在AWS Lambda做資料抽取
 將各個資料（US Cases、台灣COVID19案例數和台灣疫苗施打率）處理後，把資料存入AWS S3，再由Glue 編目程式創建資料表格Glue Data Catalog
 
 ## 資料分析
+我使用AWS Athena搜尋資料，並且用PowerBI軟體(Tableau)做資料分析，分析的圖表是依據以下的問題產出，再把圖表放入Dashboard
+1. 從2021-2022年US Cases, Death, and Recovery人數
+2. 從2021-2022台灣COVID19感染人數
+3. 台灣各縣市（台北、新北、桃園和台中）和各年齡層感染COVID19人數
+4. 台北市各年齡層感染COVID19百分比
+5. 2021-2022年台灣疫苗施打人數
+6. 台灣前三個縣市施打COVID19疫苗比率
+![Dashboard](image/Dashboard1.png)
 
 ## Reference
