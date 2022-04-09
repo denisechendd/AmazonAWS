@@ -20,11 +20,12 @@ AWS COVID19資料整合使用New York Times、疫情指揮中心和衛福部疾�
 ![DataEngineer_structure](image/DE_Structure.jpg)
 在AWS Lambda用Python request讀取api資料，原始資料儲存在AWS S3，再使用AWS EC2和Lambda處理資料，將處理的資料儲存在S3。接著，使用AWS Glue把
 AWS s3資料轉成資料表格(Glue Data Catalog)，可以用AWS Athena搜尋資料，並且用Tableau產生資料圖表。
-##ETL Jobs (資料抽取、轉換、裝載)
+
+## ETL Jobs (資料抽取、轉換、裝載)
 COVID19資料整合專案搜集各個資料來源，在AWS Lambda做資料抽取、轉換和裝載，將不同檔案格式(Excel、CSV)做資料處理和統整後，再把資料匯入到資料庫和AWS S3
 ### 資料提取
-從各個資料來源，我用Python讀取網站的資料，將原始資料存入AWS S3，關於US COVID19資料是由2020~2022年的COVID19 案例數和死亡人數，
-台灣COVID19資料涵蓋2020~2022有縣市、鄉鎮、境外移入、年齡層和病例數等欄位，台灣疫苗資料包括莫德納、AZ、BNT和高端施打人數，還有台灣COVID19各縣市
+從各個資料來源，我用Python讀取網站的資料，將原始資料存入AWS S3，關於US COVID19資料是由2020-2022年的COVID19 案例數和死亡人數，
+台灣COVID19資料涵蓋2020-2022有縣市、鄉鎮、境外移入、年齡層和病例數等欄位，台灣疫苗資料包括莫德納、AZ、BNT和高端施打人數，還有台灣COVID19各縣市
 疫苗施打率
 
 ### 資料轉換
