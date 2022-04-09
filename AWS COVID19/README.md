@@ -35,7 +35,11 @@ COVID19資料整合專案搜集各個資料來源，在AWS Lambda做資料抽取
 ###資料輸入
 將各個資料（US Cases、台灣COVID19案例數和台灣疫苗施打率）處理後，把資料存入AWS S3，再由Glue 編目程式創建資料表格Glue Data Catalog
 
+<<<<<<< HEAD
 ##資料分析
+=======
+## 資料分析
+>>>>>>> 1046c1d91875831c22907ad74a446030d0531857
 我使用AWS Athena搜尋資料，並且用PowerBI軟體(Tableau)做資料分析，分析的圖表是依據以下的問題產出，再把圖表放入Dashboard
 1. 從2021-2022年US Cases, Death, and Recovery人數
 2. 從2021-2022台灣COVID19感染人數
@@ -44,6 +48,7 @@ COVID19資料整合專案搜集各個資料來源，在AWS Lambda做資料抽取
 5. 2021-2022年台灣疫苗施打人數
 6. 台灣前三個縣市施打COVID19疫苗比率
 ![Dashboard](image/Dashboard1.png)
+<<<<<<< HEAD
 ##Reference
 1. CloudGuruChallenge
 https://acloudguru.com/blog/engineering/cloudguruchallenge-python-aws-etl
@@ -51,3 +56,7 @@ https://acloudguru.com/blog/engineering/cloudguruchallenge-python-aws-etl
 https://github.com/alanchn31/Movalytics-Data-Warehouse
 3. How do I allow my Lambda execution role to access my Amazon S3 bucket?
 https://aws.amazon.com/premiumsupport/knowledge-center/lambda-execution-role-s3-bucket/
+=======
+
+## Reference
+>>>>>>> 1046c1d91875831c22907ad74a446030d0531857
