@@ -29,15 +29,7 @@ def lambda_handler(event, context):
     uscountry_s3 = upload_s3(uscountry.getvalue(), 'aws-covid19-proj', 'data/raw/us.csv')
     uscountry_recovery_s3 = upload_s3(uscountry_recovery.getvalue(), 'aws-covid19-proj', 'data/raw/us_recovery.csv')
     taiwan_data_s3 = upload_s3(taiwan_data.getvalue(), 'aws-covid19-proj', 'data/raw/taiwan_data.csv')
-    # world data us: 78969508 , 982828; India: 42,881,179, 512924, France: 22534971, 137770
     world_data_s3 = upload_s3(world_data.getvalue(), 'aws-covid19-proj', 'data/raw/world_data.csv')
-    #s3_object = s3_var.get_object(Bucket='aws-covid19-proj', Key='data/raw/COVID19_vaccine.csv')
-    #vaccine_content = StringIO(s3_object['Body'].read().decode('utf-8'))
-    #uscountry_df = pd.read_csv(world_data, encoding='utf-8')
-    #df_vaccine = pd.read_csv(vaccine_content, encoding='utf-8', header=None)
-    #df_vaccine.columns = ['日期', '累計接種', 'AZ累計接種', '莫德納累計接種', 'BNT累計接種', '高端累計接種', 'AZ推估存量', '莫德納推估存量', 'BNT推估存量',
-     #                     '高端推估存量', '註記']
-    #vaccine_data_s3 = upload_s3(df_vaccine.to_string(), 'aws-covid19-proj', 'data/raw/vaccine_data1.csv')
 
 
 def download(url, file_name):
